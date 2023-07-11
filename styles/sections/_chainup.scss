@@ -1,0 +1,94 @@
+#chainup {
+  padding: 100px 0px;
+  .container {
+    .chainup-wrapper {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 40px;
+      align-items: center;
+      @media screen and (max-width: 1080px) {
+        grid-template-columns: 1fr;
+        .chainup-col:nth-child(1) {
+          grid-row: 2;
+        }
+        .chainup-col:nth-child(2) {
+          grid-row: 1;
+        }
+      }
+    }
+    .chainup-img img {
+      width: 100%;
+    }
+    .chainup {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin-top: 50px;
+      .chainup-card {
+        text-align: center;
+        color: #000;
+        margin: 80px 40px 40px 40px ;
+        background: #ffffff;
+        border: 1px solid #f2f2f2;
+        box-shadow: 0px 27.11px 49.06px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px 20px 20px 20px;
+        
+      }
+      .chainup-icon{
+        position: absolute;
+        top: -40px;
+      }
+      .chainup-icon img {
+        width: 80%;
+    }
+      p.count {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 10px 0;
+      }
+      .col-2:first-child {
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+      }
+      .col-2:nth-child(2) {
+        border-bottom: 1px solid #000;
+      }
+      .col-2:nth-child(3) {
+        border-right: 1px solid #000;
+      }
+      @media screen and (max-width: 580px) {
+        margin-top: 40;
+        grid-template-columns: 1fr;
+        .col-2:first-child,
+        .col-2:nth-child(2),
+        .col-2:nth-child(3) {
+          border: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  #chainup {
+    padding: 80px 0px;
+}
+.chainup-col .section-title{
+  text-align: center;
+}
+}
+@media screen and (max-width: 550px) {
+  #chainup {
+    padding: 40px 0px;
+}
+#chainup .container .chainup .chainup-card {
+  margin: 60px 30px 30px 30px;
+}
+#chainup .container .chainup {
+  margin-top: 30px;
+}
+}

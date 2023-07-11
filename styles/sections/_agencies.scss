@@ -1,0 +1,115 @@
+
+.agencies{
+    padding-bottom: 100px;
+}
+
+.agencies-content-warpper{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.agencies-table .table{
+    width: 100%;
+    border-spacing: 0 !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+.agencies-table .table thead tr{
+padding: 15px 0;
+text-align: start;
+}
+.agencies-table .table thead tr th{
+padding: 15px 0;
+text-align: start;
+padding-left: 60px;
+color: #fff;
+font-size: 18px;
+font-weight: 600;
+}
+.agencies-table .table tbody tr td{
+padding: 15px 0;
+text-align: start;
+padding-left: 60px;
+background: #F4F4F4;
+border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.table-redio-box{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .agencies-content-warpper {
+        width: 100%;
+        margin: auto;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .agencies-table .table thead tr th {
+        padding: 15px 0;
+        text-align: start;
+        padding-left: 60px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 600px) {
+    .agencies-table .table thead tr th {
+        padding: 15px 20px;
+        text-align: start;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .agencies-table .table tbody tr td {
+        padding: 5px 15px;
+        text-align: start;
+        font-size: 14px;
+        background: #F4F4F4;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    .agencies {
+        padding-bottom: 70px;
+    }
+    .agencies-content-warpper .section-title{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 40px;
+        margin-bottom: 0;
+    }
+}
+.type-one {
+    .agencies-table .table thead tr{
+        background: #1DB954;
+    }
+    .table-redio-box{
+        background: #1DB954;
+    }
+}
+.type-two {
+    .agencies-table .table thead tr{
+        background: #FF8435;
+    }
+    .table-redio-box{
+        background: #FF8435;
+    }
+}
+.type-three {
+    .agencies-table .table thead tr{
+        background: #FF9900;
+    }
+    .table-redio-box{
+        background: #FF9900;
+    }
+}
+.type-four {
+    .agencies-table .table thead tr{
+        background: #EF4B4C;
+    }
+    .table-redio-box{
+        background: #EF4B4C;
+    }
+}

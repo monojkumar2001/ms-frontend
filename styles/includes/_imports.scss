@@ -1,0 +1,25 @@
+/* ALl Include Files */
+@import "./_variables.scss";
+@import "./_global-styles.scss";
+@import "./_custom-classes.scss";
+
+/* All Component Files */
+@import "../components/_cards.scss";
+@import "../components/_footer.scss";
+@import "../components/_drawer.scss";
+@import "../components/_header.scss";
+
+
+/* All sections */
+@import "../sections/_banner.scss";
+@import "../sections/_service.scss";
+@import "../sections/_chainup.scss";
+@import "../sections/_vision.scss";
+@import "../sections/_pricing.scss";
+@import "../sections/_faq.scss";
+@import "../sections/_feature.scss";
+@import "../sections/_review.scss";
+@import "../sections/_videointro.scss";
+@import "../sections/_howItWork.scss";
+@import "../sections/_agencies.scss";
+@import "../sections/_follower.scss";

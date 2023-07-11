@@ -1,0 +1,101 @@
+.privacy-policy{
+    padding:150px 0 100px 0;
+}
+.privacy-policy-wrapper{
+    display:grid;
+    gap:60px;
+    margin-top:100px;
+}
+.privacy-policy-content{
+    display:flex;
+    width:100%;
+    gap:50px;
+}
+
+.privacy-policy-left{
+    width:30%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.privacy-policy-left .privacy-policy-img{
+    width: 400px;
+}
+.privacy-policy-left .privacy-policy-img img{
+    width:100%;
+}
+.privacy-policy-right{
+    width:70%;
+}
+.privacy-policy-right .privacy-policy-title{
+    font-size: clamp(22px, 4.5vw, 40px);
+    font-weight: 700;
+    color: #2E2E2E;
+}
+.privacy-policy-content-2{
+    display:flex;
+    align-items:flex-start;
+    width:100%;
+    gap:30px;
+}
+.privacy-policy-description {
+    margin-top:20px;
+    display:grid;
+    gap:20px;
+}
+.privacy-policy-description p {
+  font-size: 18px;
+  color: #2E2E2E;
+}
+@media screen and (max-width:1000px) {
+	.privacy-policy-content{
+        display:flex;
+        align-items:center;
+        width:100%;
+        gap:30px;
+        flex-direction: column;
+    }
+    .privacy-policy-content-2{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    
+.privacy-policy-left{
+    width:100%;
+}
+    .privacy-policy-left .privacy-policy-img img{
+        width:100%;
+    }
+    .privacy-policy-right{
+        width:100%;
+    }
+}
+@media screen and (max-width:550px) {
+    .privacy-policy{
+        padding:80px 0 70px 0;
+    }
+	.privacy-policy-content{
+        display:flex;
+        align-items:center;
+        width:100%;
+        gap:30px;
+        flex-direction: column;
+    }
+    .privacy-policy-content-2{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    
+    .privacy-policy-left{
+        width:100%;
+    }
+    .privacy-policy-left .privacy-policy-img{
+        width: 300px;
+    }
+    .privacy-policy-left .privacy-policy-img img{
+        width:100%;
+    }
+    .privacy-policy-right{
+        width:100%;
+    }
+}

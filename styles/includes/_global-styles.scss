@@ -1,0 +1,53 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+	*:focus {
+		outline: none;
+	}
+}
+
+html {
+    scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: $primaryFont;
+	color: #000;
+	font-weight: 400;
+	overflow-x: hidden;
+    background: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+p{
+	line-height: 30px;
+}
+
+li {
+	list-style-type: none;
+}
+
+button,
+input,
+select,
+textarea {
+	outline: none;
+	border: none;
+	background: none;
+	font-family: $primaryFont;
+	color: $primaryTextColor;
+}
+
+button,
+select {
+	cursor: pointer;
+}
+
+img {
+	user-select: none;
+}

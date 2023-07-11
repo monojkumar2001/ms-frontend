@@ -1,0 +1,48 @@
+#vision {
+    padding: 100px 0 0 0;
+    .container {
+        .vision-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+        .vision-right img {
+            width: 100%;
+        }
+        h2.vision-title {
+            font-size: clamp(30px, 4vw, 50px);
+            line-height:60px;
+            margin-bottom: 0.5em;
+            color: #000000;
+            font-weight: 900;
+        }
+        p.vision-des {
+            margin-bottom: 20px;
+            font-size: clamp(15px, 3vw, 18px);
+            line-height: 30px;
+        }        
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #vision {
+        padding: 80px 0 0 0;
+    }
+    #vision .container .vision-wrapper {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 550px) {
+    #vision {
+        padding: 50px 0 0 0;
+    }
+    #vision .container h2.vision-title {
+        line-height: 40px;
+        text-align: center;
+    }
+    #vision .container .vision-wrapper {
+        gap: 30px;
+        padding: 0 10px;
+    }
+}

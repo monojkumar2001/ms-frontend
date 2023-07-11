@@ -1,0 +1,279 @@
+// #video-intro {
+//     padding: 3em 0 0 0;
+//     background: linear-gradient(0deg, rgba(196, 196, 196, 0) 0%, #ccfae4 100%);
+//     .container {
+//         text-align: center;
+//         .heading {
+//             font-size: clamp(30px, 3vw, 60px);
+//             font-weight: 700;
+//             margin-bottom: 10px;
+//         }
+//         .description {
+//             font-size: clamp(16px, 3vw, 22px);
+//             font-weight: 500;
+//             margin-bottom: 2em;
+//         }
+//         .player-container {
+//             max-width: 980px;
+//             width: 100%;
+//             margin: 0 auto;
+//             position: relative;
+//             box-shadow: 0 0 0 #ff8435;
+//             animation: pulse 3s infinite;
+//             border-radius: 32px;
+//             &::before {
+//                 content: "";
+//                 position: absolute;
+//                 z-index: -1;
+//                 background-color: #1db954;
+//                 height: 125px;
+//                 width: 125px;
+//                 top: 0;
+//                 left: 0;
+//                 transform: translate(-50%, -50%);
+//                 overflow: hidden;
+//                 border-radius: 50%;
+//             }
+//             &::after {
+//                 content: "";
+//                 position: absolute;
+//                 z-index: -1;
+//                 background-color: #1db954;
+//                 height: 125px;
+//                 width: 125px;
+//                 bottom: 0;
+//                 right: 0;
+//                 transform: translate(50%, 50%);
+//                 overflow: hidden;
+//             }
+//             @media screen and (max-width: 1080px) {
+//                 &::after,
+//                 &::before {
+//                     display: none;
+//                 }
+//             }
+//             .player-wrapper {
+//                 position: relative;
+//                 overflow: hidden;
+//                 padding-bottom: 56.25%;
+//                 border-radius: 32px;
+//                 .video {
+//                     position: absolute;
+//                     top: 0;
+//                     left: 0;
+//                     width: 100%;
+//                     height: 100%;
+//                     border: 0;
+//                 }
+//             }
+//         }
+//     }
+//     &.type-two {
+//         background: linear-gradient( 0deg, rgba(196, 196, 196, 0) 0%, rgba(255, 132, 53, 0.29) 100%);
+//         .container {
+//             .player-container {
+//                 &::before {
+//                     background-color: #ff8435;
+//                 }
+//                 &::after {
+//                     background-color: #ff8435;
+//                 }
+//             }
+//         }
+//     }
+//     &.type-three {
+//         background: linear-gradient(0deg, rgba(196, 196, 196, 0) 0%, #ffe3ba 100%);
+//         .container {
+//             .player-container {
+//                 &::before {
+//                     background-color: #ffae34;
+//                 }
+//                 &::after {
+//                     background-color: #ffae34;
+//                 }
+//             }
+//         }
+//     }
+//     &.type-four {
+//         background: linear-gradient( 0deg, rgba(196, 196, 196, 0) 0%, rgba(135, 167, 255, 0.44) 100%);
+//         .container {
+//             .player-container {
+//                 &::before {
+//                     background-color: #5482ff;
+//                 }
+//                 &::after {
+//                     background-color: #5482ff;
+//                 }
+//             }
+//         }
+//     }
+//     &.type-five {
+//         background: linear-gradient( 0deg, rgba(196, 196, 196, 0) 0%, rgba(135, 167, 255, 0.44) 100%);
+//         .container {
+//             .player-container {
+//                 &::before {
+//                     background-color: #6e8df8;
+//                 }
+//                 &::after {
+//                     background-color: #6e8df8;
+//                 }
+//             }
+//         }
+//     }
+//     &.type-six {
+//         background: linear-gradient( 0deg, rgba(196, 196, 196, 0) 0%, rgba(254, 84, 118, 0.29) 100%);
+//         .container {
+//             .player-container {
+//                 &::before {
+//                     background-color: #fe5476;
+//                 }
+//                 &::after {
+//                     background-color: #fe5476;
+//                 }
+//             }
+//         }
+//     }
+//     &.type-seven {
+//         background: linear-gradient( 0deg, rgba(255, 255, 255, 0.37) 0.98%, rgb(255 193 193) 100%);
+//         .container {
+//             .player-container {
+//                 &::before {
+//                     background-color: #ef4b4c;
+//                 }
+//                 &::after {
+//                     background-color: #ef4b4c;
+//                 }
+//             }
+//         }
+//     }
+//     &.type-eight {
+//         background: linear-gradient( 180deg, rgba(218, 81, 132, 0.47) 0%, rgba(255, 173, 174, 0) 72.98%);
+//         .container {
+//             .player-container {
+//                 &::before {
+//                     background-color: #c41b6c;
+//                 }
+//                 &::after {
+//                     background-color: #c41b6c;
+//                 }
+//             }
+//         }
+//     }
+//     &.type-nine {
+//         background: linear-gradient( 180deg, rgba(110, 141, 248, 0.44) 0%, rgba(255, 255, 255, 0) 72.98%);
+//         .container {
+//             .player-container {
+//                 &::before {
+//                     background-color: #6e8df8;
+//                 }
+//                 &::after {
+//                     background-color: #6e8df8;
+//                 }
+//             }
+//         }
+//     }
+//     &.type-10 {
+//         background: linear-gradient( 180deg, rgba(110, 141, 248, 0.44) 0%, rgba(255, 255, 255, 0) 72.98%);
+//         .container {
+//             .player-container {
+//                 &::before {
+//                     background-color: #5a8fe9;
+//                 }
+//                 &::after {
+//                     background-color: #5a8fe9;
+//                 }
+//             }
+//         }
+//     }
+//     &.type-11 {
+//         background: linear-gradient( 180deg, rgba(239, 75, 76, 0.31) 0%, rgba(255, 255, 255, 0) 72.98%);
+//         .container {
+//             .player-container {
+//                 &::before {
+//                     background-color: #ef4b4c;
+//                 }
+//                 &::after {
+//                     background-color: #ef4b4c;
+//                 }
+//             }
+//         }
+//     }
+//     &.type-12 {
+//         background: linear-gradient( 180deg, rgba(239, 75, 76, 0.31) 0%, rgba(255, 255, 255, 0) 72.98%);
+//         .container {
+//             .player-container {
+//                 &::before {
+//                     background-color: #d44f4a;
+//                 }
+//                 &::after {
+//                     background-color: #d44f4a;
+//                 }
+//             }
+//         }
+//     }
+//     &.type-13 {
+//         background: linear-gradient( 180deg, rgba(255, 153, 0, 0.26) 0%, rgba(255, 255, 255, 0) 72.98%);
+//         .container {
+//             .player-container {
+//                 &::before {
+//                     background-color: #ff9900;
+//                 }
+//                 &::after {
+//                     background-color: #ff9900;
+//                 }
+//             }
+//         }
+//     }
+//     &.type-14 {
+//         background: linear-gradient( 180deg, rgba(243, 102, 72, 0.39) 0%, rgba(255, 255, 255, 0) 72.98%);
+//         .container {
+//             .player-container {
+//                 &::before {
+//                     background-color: #ef4b4c;
+//                 }
+//                 &::after {
+//                     background-color: #ef4b4c;
+//                 }
+//             }
+//         }
+//     }
+//     &.type-15 {
+//         background: linear-gradient( 180deg, #ffc0de 0%, rgba(255, 255, 255, 0) 72.98%);
+//         .container {
+//             .player-container {
+//                 &::before {
+//                     background-color: #c41b6c;
+//                 }
+//                 &::after {
+//                     background-color: #c41b6c;
+//                 }
+//             }
+//         }
+//     }
+//     &.type-16 {
+//         background: linear-gradient( 180deg, rgba(36, 165, 231, 0.28) 0%, rgba(255, 255, 255, 0) 72.98%);
+//         .container {
+//             .player-container {
+//                 &::before {
+//                     background-color: #24a5e7;
+//                 }
+//                 &::after {
+//                     background-color: #24a5e7;
+//                 }
+//             }
+//         }
+//     }
+//     &.type-17 {
+//         background: linear-gradient( 180deg, rgba(36, 165, 231, 0.29) 0%, rgba(255, 255, 255, 0) 72.98%);
+//         .container {
+//             .player-container {
+//                 &::before {
+//                     background-color: #0098cd;
+//                 }
+//                 &::after {
+//                     background-color: #0098cd;
+//                 }
+//             }
+//         }
+//     }
+// }

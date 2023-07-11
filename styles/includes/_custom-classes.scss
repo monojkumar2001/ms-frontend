@@ -1,0 +1,123 @@
+.container {
+  width: 1440px;
+  max-width: 95%;
+  margin: auto;
+}
+
+.section-image {
+  width: 1440px;
+  max-width: 100%;
+  padding: 100px 0 40px 0;
+  margin: auto;
+}
+.section-img-content-warpper {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 40px;
+}
+.section-img-content-warpper .sign-up-btn-all {
+  border-radius: 10px;
+  padding: 20px 30px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.engage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .text {
+    width: 1240px;
+    max-width: 95%;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}
+
+.sidenav-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0;
+  .nav-item {
+    flex: 1;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+.service-list-item {
+  display: none;
+}
+.service-list {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.service-list .heading {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.service-list .ul-items .item {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 0;
+}
+.active {
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .section-image {
+    padding: 80px 0 40px 0;
+}
+.section-img-content-warpper {
+  width: 80%;
+  padding-bottom: 40px;
+}
+}
+@media screen and (max-width: 550px) {
+  .section-image {
+    padding: 60px 0 40px 0;
+}
+.section-img-content-warpper {
+  width: 100%;
+  padding: 0 20px;
+  padding-bottom: 40px;
+}
+}
+
+.type-one {
+  .sign-up-btn-all {
+    background: #1db954;
+  }
+}
+.type-two {
+  .sign-up-btn-all {
+    background: #FF8435;
+  }
+}
+.type-three {
+  .sign-up-btn-all {
+    background: #FF9900;
+  }
+}
+.type-four {
+  .sign-up-btn-all {
+    background: #EF4B4C;
+  }
+}

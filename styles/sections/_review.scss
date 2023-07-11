@@ -1,0 +1,299 @@
+#review {
+    padding: 4em 0;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #ccfae4 100%);
+    .review-container {
+        width: 1240px;
+        max-width: 95%;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        .heading {
+            font-size: clamp(30px, 3vw, 60px);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: clamp(16px, 3vw, 22px);
+            font-weight: 500;
+            max-width: 680px;
+            margin: 0 auto;
+            margin-bottom: 3em;
+        }
+        .review-slider {
+            .new-pagination {
+                margin-top: 20px;
+                .swiper-pagination-bullet {
+                    cursor: pointer;
+                    min-height: 12px;
+                    min-width: 12px;
+                    margin: 0 4px;
+                    transition: all 300ms ease-in-out;
+                    &-active {
+                        width: 60px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            .sw-btn-next,
+            .sw-btn-prev {
+                position: absolute;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                top: 50%;
+                z-index: 100;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #ffffff;
+                @media screen and (max-width: 980px) {
+                    display: none;
+                }
+            }
+            .sw-btn-next {
+                right: 0;
+                transform: translateY(50%);
+            }
+            .sw-btn-prev {
+                left: 0;
+                transform: translateY(50%);
+            }
+        }
+    }
+    &.type-one .review-slider {
+        .sw-btn-next,
+        .sw-btn-prev {
+            border: 1px solid #1db954;
+            svg {
+                path {
+                    fill: #1db954;
+                }
+            }
+        }
+    }
+    &.type-two {
+        background: linear-gradient( 180deg, rgba(196, 196, 196, 0) 0%, rgba(255, 132, 53, 0.29) 100%);
+        .review-slider {
+            .sw-btn-next,
+            .sw-btn-prev {
+                border: 1px solid #ff8435;
+                svg {
+                    path {
+                        fill: #ff8435;
+                    }
+                }
+            }
+        }
+    }
+    &.type-three {
+        background: linear-gradient( 180deg, rgba(196, 196, 196, 0) 0%, #ffe3ba 100%);
+        .review-slider {
+            .sw-btn-next,
+            .sw-btn-prev {
+                border: 1px solid #ff9900;
+                svg {
+                    path {
+                        fill: #ff9900;
+                    }
+                }
+            }
+        }
+    }
+    &.type-four {
+        background: linear-gradient( 180deg, rgba(196, 196, 196, 0) 0%, rgba(135, 167, 255, 0.44) 100%);
+        .review-slider {
+            .sw-btn-next,
+            .sw-btn-prev {
+                border: 1px solid #0045ff;
+                svg {
+                    path {
+                        fill: #0045ff;
+                    }
+                }
+            }
+        }
+    }
+    &.type-five {
+        background: linear-gradient( 180deg, rgba(196, 196, 196, 0) 0%, rgba(135, 167, 255, 0.44) 100%);
+        .review-slider {
+            .sw-btn-next,
+            .sw-btn-prev {
+                border: 1px solid #6e8df8;
+                svg {
+                    path {
+                        fill: #6e8df8;
+                    }
+                }
+            }
+        }
+    }
+    &.type-six {
+        background: linear-gradient( 180deg, rgba(196, 196, 196, 0) 0%, rgba(254, 84, 118, 0.29) 100%);
+        .review-slider {
+            .sw-btn-next,
+            .sw-btn-prev {
+                border: 1px solid #fe5476;
+                svg {
+                    path {
+                        fill: #fe5476;
+                    }
+                }
+            }
+        }
+    }
+    &.type-seven {
+        background: linear-gradient( 180deg, rgba(255, 255, 255, 0.37) 0.98%, rgb(255 193 193) 100%);
+        .review-slider {
+            .sw-btn-next,
+            .sw-btn-prev {
+                border: 1px solid #ef4b4c;
+                svg {
+                    path {
+                        fill: #ef4b4c;
+                    }
+                }
+            }
+        }
+    }
+    &.type-eight {
+        background: linear-gradient( 0deg, rgba(218, 81, 132, 0.47) 0%, rgba(255, 173, 174, 0) 72.98%);
+        .review-slider {
+            .sw-btn-next,
+            .sw-btn-prev {
+                border: 1px solid #c41b6c;
+                svg {
+                    path {
+                        fill: #c41b6c;
+                    }
+                }
+            }
+        }
+    }
+    &.type-nine {
+        background: linear-gradient( 0deg, rgba(110, 141, 248, 0.44) 0%, rgba(255, 255, 255, 0) 72.98%);
+        .review-slider {
+            .sw-btn-next,
+            .sw-btn-prev {
+                border: 1px solid #512ee8;
+                svg {
+                    path {
+                        fill: #512ee8;
+                    }
+                }
+            }
+        }
+    }
+    &.type-10 {
+        background: linear-gradient( 0deg, rgba(110, 141, 248, 0.44) 0%, rgba(255, 255, 255, 0) 72.98%);
+        .review-slider {
+            .sw-btn-next,
+            .sw-btn-prev {
+                border: 1px solid #5a8fe9;
+                svg {
+                    path {
+                        fill: #5a8fe9;
+                    }
+                }
+            }
+        }
+    }
+    &.type-11 {
+        background: linear-gradient( 0deg, rgba(239, 75, 76, 0.31) 0%, rgba(255, 255, 255, 0) 72.98%);
+        .review-slider {
+            .sw-btn-next,
+            .sw-btn-prev {
+                border: 1px solid #ef4b4c;
+                svg {
+                    path {
+                        fill: #ef4b4c;
+                    }
+                }
+            }
+        }
+    }
+    &.type-12 {
+        background: linear-gradient( 0deg, rgba(239, 75, 76, 0.31) 0%, rgba(255, 255, 255, 0) 72.98%);
+        .review-slider {
+            .sw-btn-next,
+            .sw-btn-prev {
+                border: 1px solid #d44f4a;
+                svg {
+                    path {
+                        fill: #d44f4a;
+                    }
+                }
+            }
+        }
+    }
+    &.type-13 {
+        background: linear-gradient( 0deg, rgba(255, 153, 0, 0.26) 0%, rgba(255, 255, 255, 0) 72.98%);
+        .review-slider {
+            .sw-btn-next,
+            .sw-btn-prev {
+                border: 1px solid #ff9900;
+                svg {
+                    path {
+                        fill: #ff9900;
+                    }
+                }
+            }
+        }
+    }
+    &.type-14 {
+        background: linear-gradient( 0deg, rgba(243, 102, 72, 0.39) 0%, rgba(255, 255, 255, 0) 72.98%);
+        .review-slider {
+            .sw-btn-next,
+            .sw-btn-prev {
+                border: 1px solid #ef4b4c;
+                svg {
+                    path {
+                        fill: #ef4b4c;
+                    }
+                }
+            }
+        }
+    }
+    &.type-15 {
+        background: linear-gradient( 0deg, #ffc0de 0%, rgba(255, 255, 255, 0) 72.98%);
+        .review-slider {
+            .sw-btn-next,
+            .sw-btn-prev {
+                border: 1px solid #c41b6c;
+                svg {
+                    path {
+                        fill: #c41b6c;
+                    }
+                }
+            }
+        }
+    }
+    &.type-16 {
+        background: linear-gradient( 0deg, rgba(36, 165, 231, 0.28) 0%, rgba(255, 255, 255, 0) 72.98%);
+        .review-slider {
+            .sw-btn-next,
+            .sw-btn-prev {
+                border: 1px solid #24a5e7;
+                svg {
+                    path {
+                        fill: #24a5e7;
+                    }
+                }
+            }
+        }
+    }
+    &.type-17 {
+        background: linear-gradient( 0deg, rgba(36, 165, 231, 0.29) 0%, rgba(255, 255, 255, 0) 72.98%);
+        .review-slider {
+            .sw-btn-next,
+            .sw-btn-prev {
+                border: 1px solid #24a5e7;
+                svg {
+                    path {
+                        fill: #24a5e7;
+                    }
+                }
+            }
+        }
+    }
+}

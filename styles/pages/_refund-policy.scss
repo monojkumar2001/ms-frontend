@@ -1,0 +1,36 @@
+#refund-policy {
+	padding: 150px 0 100px 0;
+	.container {
+		.refound-policy-wrapper{
+			width: 100%;
+			position: relative;
+			padding-right:20px;
+			.page-title-sec {
+				margin-bottom: 15px;
+			}
+			.sec-title {
+				padding-bottom: 20px;
+				padding-top: 10px;
+				font-size: 33px;
+				font-weight: 600;
+			}
+	
+			p.paragrap-content {
+				padding-bottom: 25px;
+				font-size: clamp(16px, 3vw, 20px);
+				line-height: 35px;
+			}
+	
+			h1.page-title {
+				color: #141414;
+				font-size: clamp(30px, 7vw, 55px);
+				font-weight: 600;
+				text-align: center;
+			}
+			
+		}
+	}
+}
+
+
+
